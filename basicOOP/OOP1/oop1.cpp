@@ -14,7 +14,9 @@ class Employee {
             cout<<"The value of e is "<<e<<endl;
         }
 };
-// Implementation of the declared class Employee method called set data. 
+// Implementation of the declared class Employee method called set data.
+// :: is known as scope resolution operator.
+// This means that we are defining the function outside the class but it belongs to the class. 
 void Employee ::setData(int a1,int b1, int c1){
     a=a1;
     b=b1;
