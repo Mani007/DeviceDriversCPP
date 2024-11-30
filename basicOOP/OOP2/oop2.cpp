@@ -4,11 +4,12 @@ using namespace std;
 
 class Binary_stream{
 //private:  // bydefault all the data members are private unless specified as public or protected
-
+private:
     string s;
+    void chk_bin(void);
 public:
     void read(void);
-    void chk_bin(void);
+    
     void ones_compliment(void);
     void display(void);
 };
@@ -50,7 +51,7 @@ cout << "Hello World!" << endl;
 
 Binary_stream bs;
 bs.read();
-//bs.chk_bin();  // nesting of member functions, user may not need to use it anymore. We do it internally in the class member functions.
+//bs.chk_bin();  // nesting of member functions by making it private, user may not need to use it anymore. We do it internally in the class member functions.
 cout<<"\nBEFORE One's compliment of the given binary number is "<<endl;
 bs.display();
 bs.ones_compliment();
