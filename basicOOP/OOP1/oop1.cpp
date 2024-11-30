@@ -23,7 +23,7 @@ void Employee ::setData(int a1,int b1, int c1){
 int main()
 {
     Employee harry;
-    //harry.a=45; This will throw error as a is private
+    harry.a=45; //This will throw error as a is private
     harry.d=34;
     harry.e=89;
     harry.setData(2,6,7);
