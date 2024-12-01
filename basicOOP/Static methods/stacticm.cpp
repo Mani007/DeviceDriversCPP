@@ -19,7 +19,7 @@ class Employee{
 int Employee::count;//default value of 0 will be assign to static variable
 int main() {
 cout << "Hello World!" << endl;
-Employee harry, jacob,wahhade;
+Employee harry, jacob,wahhade; // All three class instance will share same static variable count.
 //harry.id = 123; // cannot do this as id is private data member
 harry.setData();
 harry.getData();
