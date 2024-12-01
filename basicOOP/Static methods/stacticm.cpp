@@ -3,7 +3,7 @@ using namespace std;
 class Employee{
     private:
         int id;
-        int count; // Static variable to hold count of employees
+        static int count; // Static variable to hold count of employees. Static variable is also known as class variable. 
     public:
         void setData(void){ 
             cout<<"Enter the id of employee:  ";
@@ -16,7 +16,7 @@ class Employee{
         }
 
 };
-//int Employee::count;//default value of 0 will be assign to static variable
+int Employee::count;//default value of 0 will be assign to static variable
 int main() {
 cout << "Hello World!" << endl;
 Employee harry, jacob,wahhade;
