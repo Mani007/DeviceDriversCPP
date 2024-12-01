@@ -19,7 +19,8 @@ public:
     // This function can only access static variables. It cannot access non-static variables. This is a static function. 
     static void getCount(void)  
     {
-        cout<<"Total Employees are "<<count<<endl;
+        cout<<"Total Employees are for static variables are:  "<<count<<endl; // we cannot access non static variables in static functions.
+        //cout<<"The id of employee is : "<<id<<endl; // Error because it is not static variable.
     }
 };
 int Employee::count = 1000; // default value of 0 will be assign to static variable
