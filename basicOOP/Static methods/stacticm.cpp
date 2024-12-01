@@ -6,7 +6,7 @@ class Employee{
         int count;
     public:
         void setData(void){ 
-            cout<<"Enter the id of employee:  "<<endl;
+            cout<<"Enter the id of employee:  ";
             cin >> id;
         }
         void getData(void){
@@ -17,9 +17,13 @@ class Employee{
 };
 int main() {
 cout << "Hello World!" << endl;
-Employee harry;
+Employee harry, jacob,wahhade;
 //harry.id = 123; // cannot do this as id is private data member
 harry.setData();
 harry.getData();
+jacob.setData();
+jacob.getData();
+wahhade.setData();
+wahhade.getData();
 return 0;
 }
