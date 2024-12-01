@@ -3,18 +3,20 @@ using namespace std;
 class Employee{
     private:
         int id;
-        int count;
+        static int count; // Static variable to hold count of employees
     public:
         void setData(void){ 
             cout<<"Enter the id of employee:  ";
             cin >> id;
+            count++;
         }
         void getData(void){
-            cout<<"The id of employee is : "<<id<<endl;
+            cout<<"The id of employee is : "<<id<< " and this is employee number "<<count<<endl;
 
         }
 
 };
+int Employee::count;//default value of 0 will be assign to static variable
 int main() {
 cout << "Hello World!" << endl;
 Employee harry, jacob,wahhade;
