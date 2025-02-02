@@ -2,6 +2,7 @@
 using namespace std;
 // funtion prototype
 int sum(int , int );
+void somefun(void);
 
 int main() {
     int n1,n2;
@@ -13,10 +14,15 @@ int main() {
     cin>>n2;
 
     cout<<"The sum of 3,4 is "<<sum(n1,n2)<<endl;
+    somefun();
     return 0;
 }
 
 // function defination
 int sum(int a, int b){
     return a+b;
+}
+
+void somefun(){
+    cout<<"\n hello from some fun!!!"<<endl;
 }
