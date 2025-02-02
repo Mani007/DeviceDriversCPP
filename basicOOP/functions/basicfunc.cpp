@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// funtion prototype
 int sum(int a, int b);
 
 int main() {
@@ -16,6 +16,7 @@ int main() {
     return 0;
 }
 
+// function defination
 int sum(int a, int b){
     return a+b;
 }
