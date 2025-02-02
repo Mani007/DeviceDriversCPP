@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 // funtion prototype
-int sum(int a, int b);
+int sum(int , int );
 
 int main() {
     int n1,n2;
